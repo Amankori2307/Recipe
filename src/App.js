@@ -41,10 +41,8 @@ const App = () =>{
   return(
     <div className  = "App">
       <form onSubmit = {getSearch} className = "search-form">
-        <div className = "search">
             <input className = "search-bar" type = "text" value = {search} onChange = {updateSearch} />
             <button className =  "search-button" type = "submit">Search</button>
-        </div>
       </form>
       <div className = "container">
       {recipes.map((recipe,index) => <Recipe key = {index}  title = {recipe.recipe.label} calories = {recipe.recipe.calories} image = {recipe.recipe.image} ingredients = {recipe.recipe.ingredientLines} />)}
