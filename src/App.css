@@ -1,0 +1,58 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  display: flex;
+  flex-wrap:wrap;
+}
+.recipe{
+  align-self:center;
+  margin:5%;
+  flex-basis:40%;
+  box-sizing:border-box;
+  word-wrap:break-word;
+  border:1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 20px 15px 5px rgb(88, 84, 84);
+}
+.search-form{
+  display :flex;
+  justify-content: center;
+}
+
+.search{
+  margin:50px 0px;
+  border:2px solid black;
+  border-radius:8px;
+  z-index:1;
+}
+.search-button{
+  border:none;
+  font-size:1.5em;
+  color:white;
+  background-color:lightgreen;
+  border-radius:0px 8px 8px 0px;
+}
+.search-bar{
+border:hidden;
+border-radius: 8px,0px,0px,8px;
+font-size:1.5em;
+}
+.image{
+  height:auto;
+  max-width:250px
+}
+.title,.image-container{
+  text-align: center;
+}
+.ingredients-list{
+  padding: 15px 30px;
+}
+.calories{
+  text-align:center;
+}
+@media screen and (max-width : 640px){
+  .recipe{
+    flex-basis: 90%;
+  }
+}
